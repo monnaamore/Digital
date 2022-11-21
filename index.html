@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<!— Указывайте Doctype —>
 <html lang="ru">
-<!— Указывайте язык документа —>
-<head>
-
-<!— Визуально отделяйте вложенные элементы двойным пробелом —>
-    <meta charset="Windows 1251" /> <!— Указывайте кодировку UTF-8 /UTF-16 /Windows 1251 —>
-    <title>Page title</title> <!— Задавайте заголовок —>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lenni Art</title>
     <link rel="stylesheet" href="styles/styles.css">
-
-    <h1>Заголовок страницы</h1>
-
-</head>
-
-<body class="body">
-    
- <!— Всегда закрывайте парные теги —>
-    <span class="body__span" style="display:block; margin: 25px 0; font-size: 32px; font-weight: 700;">
-    Ненастоящий заголовок
-    </span>
-
-    <br class="body__br"> <!— Не закрывайте одиночные теги —>
-
-    <p class="body__p1" style="color:hotpink" title="Подсказка">Параграф текста</p>
-<!— Используйте двойные кавычки для значений атрибутов. —>
-    <p class="body__p2">Теги - это элементы, отвечающие за структуру HTML-документа</p>
-
-    <div class="div">
-        <a class="div__link" href="tel:+73822700368">+7 (3822) 70 03 68</a>
-        <a class="div__link" href="mailto:hi@tagree.ru">hi@tagree.ru</a>
-        <a class="div__link" href="https://github.com/">GitHub</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
+  </head>
+  <body class="body">
+    <header class="page-header">
+    <div class="page-header__container">
+        <a href="index.html" class="page-header__logo">
+            <img src="logo.svg" alt="logo" class="page-header__logo-icon">
+          </a>
+          <nav class="page-header__nav">
+            <a href="#" class="page-header__nav-link">Мероприятия</a>
+            <a href="#" class="page-header__nav-link">Блог</a>
+            <a href="#" class="page-header__nav-link">О нас</a>
+            <a href="#" class="page-header__nav-link">Контакты</a>
+          </nav>
+          <div class="page-header__right-block">
+            <a href="#" class="btn page-header__user-btn">
+              Войти
+            </a>
+          </div>
+          
     </div>
-
-</body>
-
+</header>
+    <main class="main"></main>
+    <footer class="page-footer"></footer>
+  </body>
 </html>
